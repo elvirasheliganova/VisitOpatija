@@ -17,7 +17,7 @@ export default function TopStaysCard(props) {
         </View>
       
         <View style={styles.icon}>
-          <Ionicons  name={props.icon} size={20} color={'#44cfc0'} />
+          <Ionicons  name={props.icon} size={20} color={'#f70b80'} />
         </View>
       </View>
      </View>
@@ -42,21 +42,20 @@ const styles = StyleSheet.create({
     shadowRadius: 4.65,
     
     elevation: 8,
-    
-    
-    
-    
+   
   },
   image: {
     width: 150,
     height: 150,
     overflow: 'hidden',
-    
-    
-    
-  },
-  type: {
    
+  },
+  description: {
+    color: '#015151'
+  },
+
+  type: {
+    color: '#015151',
     paddingRight: 20,
     fontWeight: 'bold'
   },
@@ -65,7 +64,8 @@ const styles = StyleSheet.create({
     
     width: 150,
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    color: '#015151'
   },
   icon: {
     width: 30,

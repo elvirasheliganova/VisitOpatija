@@ -7,8 +7,8 @@ export default [
     bed: 1,
     bedroom: 1,
     oldPrice: 225,
-    newPrice: 220,
-    totalPrice: 220,
+    price: 220,
+    totalPrice: 440,
     coordinate: {
       latitude: 45.33983596014515,
       longitude: 14.304786421400117, 
@@ -22,7 +22,7 @@ export default [
     bed: 2,
     bedroom: 2,
     oldPrice: 106,
-    newPrice: 75,
+    price: 75,
     totalPrice: 390,
     coordinate: {
       latitude: 45.33983596014515,
@@ -37,7 +37,7 @@ export default [
     bed: 2,
     bedroom: 1,
     oldPrice: 164,
-    newPrice: 155,
+    price: 155,
     totalPrice: 330,
     coordinate: {
      latitude: 45.33983596014515,
@@ -52,7 +52,7 @@ export default [
     bed: 2,
     bedroom: 1,
     oldPrice: 120,
-    newPrice: 100,
+    price: 100,
     totalPrice: 600,
     coordinate: {
       latitude: 45.33983596014515,

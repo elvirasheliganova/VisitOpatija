@@ -23,7 +23,7 @@ export default function CategoryStaysItem(props) {
 const styles = StyleSheet.create({
   root: {
     flexDirection: 'row',
-    backgroundColor: '#fff',
+    backgroundColor: '#eaf1f1',
     height: 70,
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     
   },
   type: {
-   
+    color: '#015151',
     paddingRight: 20,
     fontWeight: 'bold'
   }

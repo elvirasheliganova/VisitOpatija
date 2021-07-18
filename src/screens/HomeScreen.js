@@ -5,13 +5,13 @@ import Fontisto from 'react-native-vector-icons/Fontisto';
 
 const HomeScreen = () => {
 
-  
+  const navigation = useNavigation()
 
   return (
     <View>
 
       {/* SearchBar*/}
-      <TouchableOpacity style={styles.searchButton} >
+      <TouchableOpacity style={styles.searchButton} onPress={() => navigation.navigate('Destinations Search')} >
          
           <Text style={styles.searchButtonText}>Start your journey</Text>
           <Fontisto name='arrow-right' size={15} color='#fff' />
@@ -35,49 +35,50 @@ const styles = StyleSheet.create({
   image: {
     
     width: '100%',
-    height: 800,
+    height: 750,
     justifyContent: 'flex-start',
    resizeMode: 'cover',
 },
 title: {
-    fontSize: 80,
+    fontSize: 72,
     fontWeight: 'bold',
     color: '#fff',
     width: '70%',
     marginLeft: 20,
-    marginTop: 70,
+    marginTop: 50,
     lineHeight: 85
 }, 
 
 button: {
-  width: 200,
-  backgroundColor: '#fff',
+  width: 170,
+  backgroundColor: '#f1f2f2',
   borderRadius: 10,
-  height: 40,
+  height: 35,
   marginLeft: 20,
   marginTop: 20,
   justifyContent: 'center',
   alignItems: 'center',
 },
 text:{
-  fontSize: 16,
+  fontSize: 14,
   fontWeight: '500',
+  color: '#015151'
 },
 searchButton: {
   backgroundColor:  'rgba(81, 153, 155, 1)',
-  borderRadius: 15,
+ 
   borderColor: '#b3eae4cc',
   borderWidth: 1,
-  width: Dimensions.get('window').width - 140,
-  height: 50,
+  width: Dimensions.get('window').width ,
+  height: 60,
   position: 'absolute',
-  bottom: 100,
+  bottom: -15,
   
   zIndex: 100,
   alignSelf: 'center',
-  justifyContent: 'space-between',
+  justifyContent: 'space-around',
   alignItems: 'center',
-  paddingHorizontal: 25,
+  paddingHorizontal: 85,
   flexDirection: 'row',
 
 

@@ -10,14 +10,12 @@ import TopStaysCard from '../components/TopStaysCard'
 
 const DestinationSearchScreen = () => {
 
-  
-  
- 
+  const navigation = useNavigation()
 
   return (
     <View style={styles.root}>
      
-      <View style={styles.search}>
+      
          
          <Text style={styles.searchTitle}>Where do {'\n'}you want to stay?</Text> 
          
@@ -39,15 +37,26 @@ const DestinationSearchScreen = () => {
             />
           </View>
         
-          <View style={styles.searchBox}>
+          <TouchableOpacity style={styles.searchBox} onPress={() => navigation.navigate('Guests')} >
             <Picker />
-          </View>
-        </View>
+          </TouchableOpacity>
+          <TouchableOpacity 
+          style={styles.goBtn}
+          onPress={() => navigation.navigate('Guests')}
+          >
+            <View style={styles.go}>
+              <Text style={styles.goText}>
+                Go!
+              </Text>
+
+            </View>
+          </TouchableOpacity>
+        
         <View>
           <Text style={styles.staysTitle}>Top stays</Text>
           <View style={styles.staysBox}>
             <TopStaysCard
-            image={require('../../assets/images/opatijaWelcome.jpg')}
+            image={ {uri: 'https://source.unsplash.com/VvTVkc_p-eg/640x958'}}
             description='Angiolina'
             type='Villa' 
             icon='heart-outline'/>
@@ -63,9 +72,11 @@ const DestinationSearchScreen = () => {
 }
 const styles = StyleSheet.create({
   root: {
-    marginLeft: 20,
+    flex: 1,
+    paddingLeft: 20,
     height: '100%',
-    marginTop: 50
+    paddingTop: 50, 
+    backgroundColor: '#fff'
     
 
   },
@@ -76,13 +87,9 @@ const styles = StyleSheet.create({
     marginTop: 50
   },
   searchBox: {
-    marginVertical: 50,
-    
-    
+    marginTop: 50,
+    marginBottom: 25
   
-  
-    
-
   },
   row: {
     flexDirection: 'row',
@@ -91,6 +98,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderColor: 'lightgrey',
   },
+
   iconContainer: {
     width: 40,
     height: 40,
@@ -100,23 +108,37 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginRight: 10,
   },
-  locationText: {
-
-  }, 
- 
+  
   searchTitle: {
-    color: '#102a27',
+    color: '#015151',
    
     fontSize: 30,
     fontWeight: 'bold',
    
   },
+
+  goBtn: {
+    backgroundColor: 'rgba(247, 11, 128, 0.7)',
+    width: 100,
+    borderRadius: 10,
+    marginRight: 25,
+    marginBottom: 10,
+    alignSelf: 'flex-end',
+    padding: 10,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  goText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#fff',
+  },
   staysBox: {
     flexDirection: 'row',
-    marginTop: 20
+  
   },
   staysTitle: {
-    color: '#102a27',
+    color: '#015151',
     fontSize: 20,
     fontWeight: 'bold',
   }
