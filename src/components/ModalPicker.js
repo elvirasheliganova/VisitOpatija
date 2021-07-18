@@ -12,6 +12,7 @@ const ModalPicker = (props) => {
   const onPressItem = (option) => {
     props.changeModalVisibility(false)
     props.setLocation(option)
+   
 
   }
 
