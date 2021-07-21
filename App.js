@@ -24,8 +24,7 @@ import Router from './src/navigation/Router';
 import feed from './assets/data/feed'
 import SearchResultScreen from './src/screens/SearchResultScreen';
 
-const post1 = feed[0]
-const post2 = feed[1]
+
 
 const App = () => {
  
@@ -33,9 +32,7 @@ const App = () => {
   return (
     <>
     <StatusBar barStyle="dark-content" />
-    <SafeAreaView>
-      <SearchResultScreen />
-    </SafeAreaView>
+    <Router />
     
    
    

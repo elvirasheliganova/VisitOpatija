@@ -115,7 +115,7 @@ const GuestScreen = () => {
           justifyContent: 'center',
           borderRadius: 10
         }}
-        onPress={() => navigation.navigate('Home', {
+        onPress={() => {navigation.navigate('Home', {
           screen: 'Explore',
           params: {
             screen:"Search Results", 
@@ -123,7 +123,7 @@ const GuestScreen = () => {
               
               guests: adults + children,
               }
-        },})}
+        },})}}
         >
           
           <Text style={{fontSize: 20, fontWeight: 'bold', color: 'white'}}>Search</Text>
