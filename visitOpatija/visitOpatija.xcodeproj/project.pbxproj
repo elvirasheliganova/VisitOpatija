@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1924340C26ADE07A00E31721 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924340B26ADE07A00E31721 /* Tests_iOS.swift */; };
+		1924341726ADE07A00E31721 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924341626ADE07A00E31721 /* Tests_macOS.swift */; };
+		1924341926ADE07A00E31721 /* visitOpatijaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192433F026ADE07700E31721 /* visitOpatijaApp.swift */; };
+		1924341A26ADE07A00E31721 /* visitOpatijaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192433F026ADE07700E31721 /* visitOpatijaApp.swift */; };
+		1924341B26ADE07A00E31721 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192433F126ADE07700E31721 /* ContentView.swift */; };
+		1924341C26ADE07A00E31721 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192433F126ADE07700E31721 /* ContentView.swift */; };
+		1924341D26ADE07A00E31721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192433F226ADE07A00E31721 /* Assets.xcassets */; };
+		1924341E26ADE07A00E31721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192433F226ADE07A00E31721 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1924340826ADE07A00E31721 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 192433EB26ADE07700E31721 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 192433F626ADE07A00E31721;
+			remoteInfo = "visitOpatija (iOS)";
+		};
+		1924341326ADE07A00E31721 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 192433EB26ADE07700E31721 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 192433FE26ADE07A00E31721;
+			remoteInfo = "visitOpatija (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		192433F026ADE07700E31721 /* visitOpatijaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visitOpatijaApp.swift; sourceTree = "<group>"; };
+		192433F126ADE07700E31721 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		192433F226ADE07A00E31721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		192433F726ADE07A00E31721 /* visitOpatija.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visitOpatija.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		192433FA26ADE07A00E31721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192433FF26ADE07A00E31721 /* visitOpatija.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visitOpatija.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1924340126ADE07A00E31721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1924340226ADE07A00E31721 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		1924340726ADE07A00E31721 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1924340B26ADE07A00E31721 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		1924340D26ADE07A00E31721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1924341226ADE07A00E31721 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1924341626ADE07A00E31721 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		1924341826ADE07A00E31721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		192433F426ADE07A00E31721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192433FC26ADE07A00E31721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1924340426ADE07A00E31721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1924340F26ADE07A00E31721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		192433EA26ADE07700E31721 = {
+			isa = PBXGroup;
+			children = (
+				192433EF26ADE07700E31721 /* Shared */,
+				192433F926ADE07A00E31721 /* iOS */,
+				1924340026ADE07A00E31721 /* macOS */,
+				1924340A26ADE07A00E31721 /* Tests iOS */,
+				1924341526ADE07A00E31721 /* Tests macOS */,
+				192433F826ADE07A00E31721 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		192433EF26ADE07700E31721 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				192433F026ADE07700E31721 /* visitOpatijaApp.swift */,
+				192433F126ADE07700E31721 /* ContentView.swift */,
+				192433F226ADE07A00E31721 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		192433F826ADE07A00E31721 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				192433F726ADE07A00E31721 /* visitOpatija.app */,
+				192433FF26ADE07A00E31721 /* visitOpatija.app */,
+				1924340726ADE07A00E31721 /* Tests iOS.xctest */,
+				1924341226ADE07A00E31721 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		192433F926ADE07A00E31721 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				192433FA26ADE07A00E31721 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		1924340026ADE07A00E31721 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1924340126ADE07A00E31721 /* Info.plist */,
+				1924340226ADE07A00E31721 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		1924340A26ADE07A00E31721 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1924340B26ADE07A00E31721 /* Tests_iOS.swift */,
+				1924340D26ADE07A00E31721 /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		1924341526ADE07A00E31721 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1924341626ADE07A00E31721 /* Tests_macOS.swift */,
+				1924341826ADE07A00E31721 /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		192433F626ADE07A00E31721 /* visitOpatija (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1924342126ADE07A00E31721 /* Build configuration list for PBXNativeTarget "visitOpatija (iOS)" */;
+			buildPhases = (
+				192433F326ADE07A00E31721 /* Sources */,
+				192433F426ADE07A00E31721 /* Frameworks */,
+				192433F526ADE07A00E31721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "visitOpatija (iOS)";
+			productName = "visitOpatija (iOS)";
+			productReference = 192433F726ADE07A00E31721 /* visitOpatija.app */;
+			productType = "com.apple.product-type.application";
+		};
+		192433FE26ADE07A00E31721 /* visitOpatija (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1924342426ADE07A00E31721 /* Build configuration list for PBXNativeTarget "visitOpatija (macOS)" */;
+			buildPhases = (
+				192433FB26ADE07A00E31721 /* Sources */,
+				192433FC26ADE07A00E31721 /* Frameworks */,
+				192433FD26ADE07A00E31721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "visitOpatija (macOS)";
+			productName = "visitOpatija (macOS)";
+			productReference = 192433FF26ADE07A00E31721 /* visitOpatija.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1924340626ADE07A00E31721 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1924342726ADE07A00E31721 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				1924340326ADE07A00E31721 /* Sources */,
+				1924340426ADE07A00E31721 /* Frameworks */,
+				1924340526ADE07A00E31721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1924340926ADE07A00E31721 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 1924340726ADE07A00E31721 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1924341126ADE07A00E31721 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1924342A26ADE07A00E31721 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				1924340E26ADE07A00E31721 /* Sources */,
+				1924340F26ADE07A00E31721 /* Frameworks */,
+				1924341026ADE07A00E31721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1924341426ADE07A00E31721 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 1924341226ADE07A00E31721 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		192433EB26ADE07700E31721 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					192433F626ADE07A00E31721 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					192433FE26ADE07A00E31721 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1924340626ADE07A00E31721 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 192433F626ADE07A00E31721;
+					};
+					1924341126ADE07A00E31721 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 192433FE26ADE07A00E31721;
+					};
+				};
+			};
+			buildConfigurationList = 192433EE26ADE07700E31721 /* Build configuration list for PBXProject "visitOpatija" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 192433EA26ADE07700E31721;
+			productRefGroup = 192433F826ADE07A00E31721 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				192433F626ADE07A00E31721 /* visitOpatija (iOS) */,
+				192433FE26ADE07A00E31721 /* visitOpatija (macOS) */,
+				1924340626ADE07A00E31721 /* Tests iOS */,
+				1924341126ADE07A00E31721 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		192433F526ADE07A00E31721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1924341D26ADE07A00E31721 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192433FD26ADE07A00E31721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1924341E26ADE07A00E31721 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1924340526ADE07A00E31721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1924341026ADE07A00E31721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		192433F326ADE07A00E31721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1924341B26ADE07A00E31721 /* ContentView.swift in Sources */,
+				1924341926ADE07A00E31721 /* visitOpatijaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192433FB26ADE07A00E31721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1924341C26ADE07A00E31721 /* ContentView.swift in Sources */,
+				1924341A26ADE07A00E31721 /* visitOpatijaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1924340326ADE07A00E31721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1924340C26ADE07A00E31721 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1924340E26ADE07A00E31721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1924341726ADE07A00E31721 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1924340926ADE07A00E31721 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 192433F626ADE07A00E31721 /* visitOpatija (iOS) */;
+			targetProxy = 1924340826ADE07A00E31721 /* PBXContainerItemProxy */;
+		};
+		1924341426ADE07A00E31721 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 192433FE26ADE07A00E31721 /* visitOpatija (macOS) */;
+			targetProxy = 1924341326ADE07A00E31721 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1924341F26ADE07A00E31721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1924342026ADE07A00E31721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1924342226ADE07A00E31721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-2.visitOpatija";
+				PRODUCT_NAME = visitOpatija;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1924342326ADE07A00E31721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-2.visitOpatija";
+				PRODUCT_NAME = visitOpatija;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1924342526ADE07A00E31721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-2.visitOpatija";
+				PRODUCT_NAME = visitOpatija;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1924342626ADE07A00E31721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-2.visitOpatija";
+				PRODUCT_NAME = visitOpatija;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1924342826ADE07A00E31721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-2.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "visitOpatija (iOS)";
+			};
+			name = Debug;
+		};
+		1924342926ADE07A00E31721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-2.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "visitOpatija (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1924342B26ADE07A00E31721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "-2.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "visitOpatija (macOS)";
+			};
+			name = Debug;
+		};
+		1924342C26ADE07A00E31721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "-2.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "visitOpatija (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		192433EE26ADE07700E31721 /* Build configuration list for PBXProject "visitOpatija" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1924341F26ADE07A00E31721 /* Debug */,
+				1924342026ADE07A00E31721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1924342126ADE07A00E31721 /* Build configuration list for PBXNativeTarget "visitOpatija (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1924342226ADE07A00E31721 /* Debug */,
+				1924342326ADE07A00E31721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1924342426ADE07A00E31721 /* Build configuration list for PBXNativeTarget "visitOpatija (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1924342526ADE07A00E31721 /* Debug */,
+				1924342626ADE07A00E31721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1924342726ADE07A00E31721 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1924342826ADE07A00E31721 /* Debug */,
+				1924342926ADE07A00E31721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1924342A26ADE07A00E31721 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1924342B26ADE07A00E31721 /* Debug */,
+				1924342C26ADE07A00E31721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 192433EB26ADE07700E31721 /* Project object */;
+}
