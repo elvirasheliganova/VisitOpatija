@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState, useEffect, useRef} from 'react'
 import MapView, {Marker, PROVIDER_GOOGLE }from 'react-native-maps';
 import { View, Text } from 'react-native'
 import CustomMarker from '../components/CustomMarker';
@@ -9,14 +9,48 @@ import useWindowDimensions from 'react-native/Libraries/Utilities/useWindowDimen
 
 const SearchResultMapScreen = (props) => {
 
-  const [selectedPlaceId, setSelectedPlaceId] = useState()
+  const [selectedPlaceId, setSelectedPlaceId] = useState(null)
 
   const width = useWindowDimensions().width
 
+  const map = useRef()
+
+  const flatlist = useRef()
+
+  const viewConfig = useRef({itemVisiblePercentThreshold: 70})
+
+  const onViewChanged = useRef(({viewableItems}) => {
+    if (viewableItems.length > 0) {
+      const selectedPlace = viewableItems[0].item
+      setSelectedPlaceId(selectedPlace.id)
+    }
+  })
+
+  
+
+  useEffect(() => {
+    if (!selectedPlaceId || !flatlist) {
+      return
+    }
+    const index = places.findIndex(place => place.id === selectedPlaceId)
+   flatlist.current.scrollToIndex({index})
+
+   const selectedPlace = places[index]
+   const region = {
+    latitude: selectedPlace.coordinate.latitude,
+    longitude: selectedPlace.coordinate.longitude,
+    latitudeDelta: 0.1,
+    longitudeDelta: 0.1
+  }
+  map.current.animateToRegion(region)
+   
+  }, [selectedPlaceId])
+
   return (
     <View style={{width:'100%', height: '100%'}}>
-       <MapView 
-       style={{width:'100%', height: '100%'}}
+       <MapView
+        ref={map} 
+        style={{width:'100%', height: '100%'}}
        
         initialRegion={{
           latitude: 45.341038,
@@ -38,6 +72,7 @@ const SearchResultMapScreen = (props) => {
 
       <View style={{ position: 'absolute', bottom: 10}}>
         <FlatList
+        ref={flatlist}
         data={places}
         renderItem={({item}) => (
           <PostCarouselItem post={item}/>
@@ -47,6 +82,8 @@ const SearchResultMapScreen = (props) => {
         snapToInterval={width - 60}
         snapToAlignment={'center'}
         decelerationRate={'fast'}
+        viewabilityConfig={viewConfig.current}
+        onViewableItemsChanged={onViewChanged.current}
         />
         
       </View>
