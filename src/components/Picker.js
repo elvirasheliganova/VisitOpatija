@@ -7,7 +7,7 @@ import { ModalPicker } from './ModalPicker'
 const WIDTH = Dimensions.get('window').width
 const HEIGHT = Dimensions.get('window').height
 
-const Picker = () => {
+const Picker = (props) => {
 
   const [chooseLocation, setChooseLocation] = useState('Choose location...')
   const [isModalVisible, setModalVisible] = useState(false)
@@ -22,7 +22,8 @@ const Picker = () => {
   return (
     <SafeAreaView style={styles.container}>
       <TouchableOpacity 
-        onPress={() => changeModalVisibility(true)}
+        onPress={() => changeModalVisibility(true)  }
+        
         style={styles.toucahableOpacity}>
         <Text style={styles.text}>{chooseLocation}</Text>
 
@@ -36,6 +37,7 @@ const Picker = () => {
         <ModalPicker 
           changeModalVisibility = {changeModalVisibility}
           setLocation={setLocation}
+          
         />
       </Modal>
 

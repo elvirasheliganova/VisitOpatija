@@ -10,6 +10,7 @@ import TopStaysCard from '../components/TopStaysCard'
 
 const DestinationSearchScreen = () => {
 
+  
   const navigation = useNavigation()
 
   return (
@@ -38,7 +39,8 @@ const DestinationSearchScreen = () => {
           </View>
         
           <TouchableOpacity style={styles.searchBox} onPress={() => navigation.navigate('Guests')} >
-            <Picker />
+            <Picker 
+             />
           </TouchableOpacity>
           <TouchableOpacity 
           style={styles.goBtn}

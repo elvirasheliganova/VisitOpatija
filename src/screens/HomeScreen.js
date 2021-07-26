@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   image: {
     
     width: '100%',
-    height: 750,
+    height: 765,
     justifyContent: 'flex-start',
    resizeMode: 'cover',
 },
@@ -68,17 +68,19 @@ searchButton: {
   backgroundColor:  'rgba(81, 153, 155, 1)',
  
   borderColor: '#b3eae4cc',
+  borderRadius: 10,
   borderWidth: 1,
-  width: Dimensions.get('window').width ,
+  width: Dimensions.get('window').width - 40 ,
   height: 60,
   position: 'absolute',
-  bottom: -15,
+  bottom: 55,
+  
   
   zIndex: 100,
   alignSelf: 'center',
   justifyContent: 'space-around',
   alignItems: 'center',
-  paddingHorizontal: 85,
+  paddingHorizontal: 75,
   flexDirection: 'row',
 
 
