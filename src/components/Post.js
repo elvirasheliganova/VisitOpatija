@@ -1,10 +1,21 @@
+import { useNavigation } from '@react-navigation/native'
 import React from 'react'
-import { View, Text, Image, StyleSheet } from 'react-native'
+import { Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
+
 
 const Post = (props) => {
+
   const post = props.post
+
+  const navigation = useNavigation()
+
+  
+
+
   return (
-    <View style={styles.container}>
+    <TouchableOpacity 
+    onPress={() => navigation.navigate('DetailedPost', {postId: post.id})}
+    style={styles.container}>
       <Image 
         style={styles.image}
         source={{ uri: post.image}}
@@ -18,7 +29,7 @@ const Post = (props) => {
       </Text>
 
       <Text style={styles.totalPrice}>${post.totalPrice} total</Text>
-    </View>
+    </TouchableOpacity>
   )
 }
 
