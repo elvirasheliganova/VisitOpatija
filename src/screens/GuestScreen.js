@@ -1,4 +1,4 @@
-import {  useNavigation } from '@react-navigation/native';
+import {  useNavigation, useRoute } from '@react-navigation/native';
 import React, {useState} from 'react'
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import Entypo from 'react-native-vector-icons/Entypo'
@@ -10,7 +10,8 @@ const GuestScreen = () => {
   const [pets, setPets] = useState(0);
 
   const navigation = useNavigation();
-  
+  const route = useRoute()
+  const location = route.params.chooseLocation
 
   return (
     <View style={{justifyContent: 'space-between', height: '100%'}}>
@@ -120,10 +121,13 @@ const GuestScreen = () => {
           params: {
             screen:"Search Results", 
             params: {
-              
+              location,
               guests: adults + children,
               }
-        },})}}
+        },})}
+        
+      }
+        
         >
           
           <Text style={{fontSize: 20, fontWeight: 'bold', color: 'white'}}>Search</Text>
