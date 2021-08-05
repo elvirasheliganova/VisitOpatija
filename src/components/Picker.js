@@ -7,9 +7,9 @@ import { ModalPicker } from './ModalPicker'
 const WIDTH = Dimensions.get('window').width
 const HEIGHT = Dimensions.get('window').height
 
-const Picker = (props) => {
+const Picker = ({chooseLocation, setChooseLocation}) => {
 
-  const [chooseLocation, setChooseLocation] = useState('Choose location...')
+  
   const [isModalVisible, setModalVisible] = useState(false)
 
   const changeModalVisibility = (bool) => {

@@ -10,7 +10,7 @@ import TopStaysCard from '../components/TopStaysCard'
 
 const DestinationSearchScreen = () => {
 
-  
+  const [chooseLocation, setChooseLocation] = useState('Choose location...')
   const navigation = useNavigation()
 
   return (
@@ -39,12 +39,12 @@ const DestinationSearchScreen = () => {
           </View>
         
           <TouchableOpacity style={styles.searchBox} onPress={() => navigation.navigate('Guests')} >
-            <Picker 
+            <Picker chooseLocation={chooseLocation} setChooseLocation={setChooseLocation}
              />
           </TouchableOpacity>
           <TouchableOpacity 
           style={styles.goBtn}
-          onPress={() => navigation.navigate('Guests')}
+          onPress={() => navigation.navigate('Guests', {chooseLocation})}
           >
             <View style={styles.go}>
               <Text style={styles.goText}>
