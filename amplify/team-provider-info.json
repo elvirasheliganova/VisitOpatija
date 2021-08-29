@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-visitopatija-dev-134900-authRole",
+      "UnauthRoleArn": "arn:aws:iam::518549961774:role/amplify-visitopatija-dev-134900-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::518549961774:role/amplify-visitopatija-dev-134900-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-visitopatija-dev-134900-deployment",
+      "UnauthRoleName": "amplify-visitopatija-dev-134900-unauthRole",
+      "StackName": "amplify-visitopatija-dev-134900",
+      "StackId": "arn:aws:cloudformation:eu-central-1:518549961774:stack/amplify-visitopatija-dev-134900/1bd74030-08bf-11ec-ae22-0acb8bb3ac92",
+      "AmplifyAppId": "d3e8gy6q5537bp"
+    }
+  }
+}
