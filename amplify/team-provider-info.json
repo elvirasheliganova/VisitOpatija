@@ -10,6 +10,11 @@
       "StackName": "amplify-visitopatija-dev-134900",
       "StackId": "arn:aws:cloudformation:eu-central-1:518549961774:stack/amplify-visitopatija-dev-134900/1bd74030-08bf-11ec-ae22-0acb8bb3ac92",
       "AmplifyAppId": "d3e8gy6q5537bp"
+    },
+    "categories": {
+      "auth": {
+        "visitopatija4f995949": {}
+      }
     }
   }
 }

@@ -23,6 +23,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import Router from './src/navigation/Router';
 import feed from './assets/data/feed'
 import SearchResultScreen from './src/screens/SearchResultScreen';
+import { withAuthenticator } from 'aws-amplify-react-native';
 
 
 
@@ -43,4 +44,4 @@ const App = () => {
 
 
 
-export default App;
+export default withAuthenticator(App);
