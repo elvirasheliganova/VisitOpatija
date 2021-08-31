@@ -6,16 +6,26 @@ import { API,  graphqlOperation } from 'aws-amplify'
 import { listPosts } from '../graphql/queries'
 
 
-const SearchResultScreen = () => {
+
+const SearchResultScreen = (props) => {
+
+  const { guests } = props
 
   const [posts, setPosts] = useState([])
+  
 
   useEffect( () => {
     const fetchPosts = async () => {
       try {
 
         const postResult = await API.graphql(
-          graphqlOperation(listPosts)
+          graphqlOperation(listPosts, {
+            filter:{
+              maxGuests: {
+                ge: guests
+              }
+            }
+          })
         )
         setPosts(postResult.data.listPosts.items)
 

@@ -11,6 +11,7 @@ import { listPosts } from '../graphql/queries'
 
 const SearchResultMapScreen = (props) => {
 
+  const { guests } = props
   const [selectedPlaceId, setSelectedPlaceId] = useState(null)
   const [posts, setPosts] = useState([])
 
@@ -34,7 +35,13 @@ const SearchResultMapScreen = (props) => {
       try {
 
         const postResult = await API.graphql(
-          graphqlOperation(listPosts)
+          graphqlOperation(listPosts, {
+            filter:{
+              maxGuests: {
+                ge: guests
+              }
+            }
+          })
         )
         setPosts(postResult.data.listPosts.items)
 
