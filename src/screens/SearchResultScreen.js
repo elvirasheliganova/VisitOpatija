@@ -10,6 +10,8 @@ import { listPosts } from '../graphql/queries'
 const SearchResultScreen = (props) => {
 
   const { guests } = props
+  const {location} = props
+  
 
   const [posts, setPosts] = useState([])
   
@@ -20,13 +22,20 @@ const SearchResultScreen = (props) => {
 
         const postResult = await API.graphql(
           graphqlOperation(listPosts, {
-            filter:{
-              maxGuests: {
-                ge: guests
+            filter: { 
+              and: {
+                maxGuests: {
+                  ge: guests
+                },
+                location: {
+                  eq: location
+                } 
               }
-            }
-          })
-        )
+              
+                
+                
+                }}))
+           
         setPosts(postResult.data.listPosts.items)
 
       } catch (e) {

@@ -10,6 +10,7 @@ export const createPost = /* GraphQL */ `
       id
       image
       type
+      location
       title
       description
       bed
@@ -33,6 +34,7 @@ export const updatePost = /* GraphQL */ `
       id
       image
       type
+      location
       title
       description
       bed
@@ -56,6 +58,7 @@ export const deletePost = /* GraphQL */ `
       id
       image
       type
+      location
       title
       description
       bed

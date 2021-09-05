@@ -7,6 +7,7 @@ export const onCreatePost = /* GraphQL */ `
       id
       image
       type
+      location
       title
       description
       bed
@@ -27,6 +28,7 @@ export const onUpdatePost = /* GraphQL */ `
       id
       image
       type
+      location
       title
       description
       bed
@@ -47,6 +49,7 @@ export const onDeletePost = /* GraphQL */ `
       id
       image
       type
+      location
       title
       description
       bed

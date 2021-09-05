@@ -7,6 +7,7 @@ export const getPost = /* GraphQL */ `
       id
       image
       type
+      location
       title
       description
       bed
@@ -32,6 +33,7 @@ export const listPosts = /* GraphQL */ `
         id
         image
         type
+        location
         title
         description
         bed

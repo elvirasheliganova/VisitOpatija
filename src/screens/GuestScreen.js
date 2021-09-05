@@ -12,6 +12,7 @@ const GuestScreen = () => {
   const navigation = useNavigation();
   const route = useRoute()
   const location = route.params.chooseLocation
+  
 
   return (
     <View style={{justifyContent: 'space-between', height: '100%'}}>
@@ -121,7 +122,7 @@ const GuestScreen = () => {
           params: {
             screen:"Search Results", 
             params: {
-              location,
+              location: location,
               guests: adults + children,
               }
         },})}

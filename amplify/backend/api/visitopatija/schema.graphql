@@ -3,6 +3,7 @@ type Post @model {
 
   image: String!
   type: String!
+  location: String
   title: String!
   description: String!
 
